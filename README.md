@@ -7,7 +7,7 @@
 
 Moin zusammen!
 
-Schön, dass ihr hier seid. Heute haben wir mir euch etwas abgefahrenes vor. Ihr programmiert eurer eigenes Musikvideo mit Banen, Tesafilm und jeder Menge Kabeln.
+Schön, dass ihr hier seid. Heute haben wir mit euch etwas abgefahrenes vor. Ihr programmiert eurer eigenes Musikvideo mit Bananen, Tesafilm und jeder Menge Kabeln.
 
 Weil ihr hier im Workshop _Digitale Medien_ von _Alexander Lehmann_ und _Thorge Wandrei_ seid, kommt da jede Menge Technik auf euch zu, in der ihr euch kreativ zurechtfinden müsst. Das heißt nicht, dass ihr Programmieren können müsst, geschweige denn irgendwas zu verstehen. Das tun wir nicht mal immer. Viel wichtiger ist es, dass ihr euch nicht von der Technik einschüchtern lasst und stattdessen die Chance nutzt, dieses Medium ästhetisch zu erkunden. Der Code ist überwältigend, aber Schritt für Schritt könnt ihr Kleinigkeiten ändern, bis plötzlich alles passt und ihr zufrieden seid.
 
@@ -56,9 +56,10 @@ So könnt ihr gerne mit allen Werten rumspielen.
 
 Grundsätzlich ist beim Programmieren zu beachten, dass es verschiedene Datentypen gibt. Das heißt, Processing unterscheidet beispielsweise, ob ihr einen Text oder eine Zahl eingebt. Hier ist eine kurze Zusammenfassung:
 
-* __Text__ besteht aus aus mehreren Zeichen und irgendwer dachte sich mal, dass die wie aufgefädelt sind ... Darum speichern wir Text in einem `String`.
+* __Text__ besteht aus mehreren Zeichen und irgendwer dachte sich mal, dass die wie aufgefädelt sind ... Darum speichern wir Text in einem `String`.
 * __Farben__ haben in Processing ihren eigenen Datentypen. Der heißt `color` und nimmt Farben im Hex-Format. Damit codiert man den Rot-, Grün und Blau-Anteil einer Farbe in eine Zahl. Dann packen wir noch ein `#` davor, um das Format kenntlich zu machen. Beispielsweise ist `#FF0000` ein Rot und `#0000FF` ein Blau.
-* __Zahlen__ werden in zwei verschiedenen Typen gespeichert. Braucht die Zahl keine Nachkommastellen, wie bspw `7` oder `12345`, benutzen wir einen _Integer_, also `int`. Soll die Zahl doch Nachkommastellen haben (beachte, im Englischen ist es kein _Komma_, sondern ein _Punkt_), wie beispielsweise `0.5` oder `4.998`, dann benutzen wir _Fließkommazahlen_, also `float`. Das ist ein technischer Begriff, um den wir uns erstmal nicht kümmern brauchen.
+* __Zahlen__ werden in zwei verschiedenen Typen gespeichert. Braucht die Zahl keine Nachkommastellen, wie bspw. `7` oder `12345`, benutzen wir einen _Integer_, also `int`. Soll die Zahl doch Nachkommastellen haben (beachte, im Englischen ist es kein _Komma_, sondern ein _Punkt_), wie beispielsweise `0.5` oder `4.998`, dann benutzen wir _Fließkommazahlen_, also `float`. Das ist ein technischer Begriff, um den wir uns erstmal nicht kümmern brauchen.
+* __Vektoren__ kennt ihr vermutlich noch aus dem Mathe-Unterricht. In Processing heißt das `PVector`. Damit können wir beispielsweise Richtungen oder Geschwindigkeiten speichern. Im Grunde ist ein Vektor nur eine Sammlung von beispielsweise drei Zahlen für den dreidimensionalen Raum.
 
 Wenn man einen Wert mit einem Datentyp speichert, heißt das _Variable_. Wenn wir eine Variable definieren, dann schreiben wir den Datentypen dazu, damit Processing _explizit_ weiß, was wir verwenden wollen.
 
@@ -71,7 +72,20 @@ Die ganzen Farben, Texte und Zahlen könnt und sollt ihr austauschen oder zumind
 
 Außerdem solltet ihr dort auch euren Namen usw. eintragen.
 
-### Schritt 4: Hacken
+Nicht vergessen dürfen wir, dass ihr auch eure eigene Musik und Schriften in Processing benutzen sollt. Diese Dateien legt ihr in den `data`-Ordner. Den findet ihr in eurem Projekt-Ordner oder indem ihr in Processing einfach `CMD + k` auf Mac OS oder `STRG + k` auf Windows drückt. Habt ihr beispielsweise eine Musikdatei, die `hello_world.mp3` heißt, kopiert ihr sie einfach in den `data`-Ordner und ändert dann diese Zeile:
+```
+String TRACK_FILE = "music.mp3";
+```
+so, dass da euer Dateiname steht:
+```
+String TRACK_FILE = "hello_world.mp3";
+```
+
+Processing versteht die gängigsten Musikformate, beispielsweise `.mp3`, `.ogg`, `.wav` oder `.aiff`. Bitte darauf achten, dass ihr das auch richtig eintragt.
+
+Bei den Schriften ist es genau der gleiche Vorgang. Wohlgemerkt, bei Schriften gibt es zwei verschiedene Dateiendungen, `.ttf` und `.otf`, beide funktionieren in Processing.
+
+ ## Schritt 4: Hacken
 
 Vielleicht merkt ihr es gleich, aber im Code passiert folgendes. Jedes mal, wenn ihr an eurem Makey Makey (oder an eurer Tastatur) eine Taste drückt, wird die Funktion `keyEvent` aufgerufen. Eine Funktion ist ein bestimmter Abschnitt an Code, der durch geschweifte Klammern gekennzeichnet ist, `{ ... }`, und unter _bestimmten_ Umständen aufgerufen wird. Im unseren Fall, wenn eine Taste gedrückt wird. Den Rest in der Funktion kann man fast wie Englisch lesen. Beispielsweise:
 ```
@@ -113,7 +127,7 @@ Der Code gibt noch viel mehr her ... Wenn euch irgendwas nicht gefällt und ihr 
 
 ### Schritt 5: Performen
 
-Wir haben hoffentlich genug Material, damit ihr euch kreativ verwirklichen könnt. Von Bananen bis Alu-Profilen ist alles dabei. Daraus baut ihr euch mit Hilfe des Makey Makeys ein Interface für euer Programm.
+Wir haben hoffentlich genug Material, damit ihr euch kreativ verwirklichen könnt. Von Bananen bis Alu-Profilen ist alles dabei. Daraus baut ihr euch mit Hilfe des Makey Makeys ein Interface für euer Programm. Im Prinzip dürft ihr alles verwenden, ob es von uns kommt oder ihr Material in der Brand Academy findet.
 
 Das ganze läuft dann so ein bisschen ab, wie _Guitar Hero_. Nur, dass niemand eure Punkte zählt, sondern es später auf kreative, spannende und ästhetische Ideen ankommt. Kurzgesagt: Ihr drückt die Tasten vom Makey Makey so zur Musik, dass es gut aussieht.
 
