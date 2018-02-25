@@ -6,7 +6,7 @@ public class Hello extends Performer {
    * Kaputt geht nichts, bei Fehlern meckert Processing von alleine
    * und sollte irgendwas gar nicht mehr gehen, basteln wir das schon wieder hin.
    *
-   * Hier unten findet ihr erstmal jede Menge Paramter, mit denen man das Standard-Projekt,
+   * Hier unten findet ihr erstmal jede Menge Parameter, mit denen man das Standard-Projekt,
    * das ihr bekommen habt, schon mal gewaltig aufhübschen kann.
    * Musik, Farben, Größen, Schriften, darum müsst ihr euch kümmern.
    * Dateien von euch, d. h. Schriften und Musik, kommen in den "data"-Ordner.
@@ -131,7 +131,7 @@ public class Hello extends Performer {
 
   /*
    * Ab hier wird das alles ein bisschen trickreicher.
-   * Spielt gerne mnit dem Code rum.
+   * Spielt gerne mit dem Code rum.
    * Im Grunde steht ab hier, was genau passiert.
    * Also, wie sich die Formen verhalten, wie sie konstruiert werden, etc.
    * Wenn ihr etwas bestimmtes möchtet und das nicht selbst hinbekommt:
@@ -237,7 +237,7 @@ public class Hello extends Performer {
     popMatrix();
   }
 
-  void drawLayout() {    
+  void drawLayout() {
     noStroke();
     textFont(layoutFont);
     textSize(LAYOUT_FONT_SIZE * min(height, width));
@@ -406,7 +406,7 @@ public class Hello extends Performer {
       }
     }
   }
-  
+
   void makePlane(int effectType) {
     shapes.add(new Plane(effectType));
   }
@@ -442,7 +442,7 @@ public class Hello extends Performer {
       }
     }
   }
-  
+
   void makeShutter(int effectType) {
     shapes.add(new Shutter(effectType));
   }
@@ -497,7 +497,7 @@ public class Hello extends Performer {
       }
     }
   }
-  
+
   void makeBlob(int effectType) {
     shapes.add(new Blob(effectType));
   }
@@ -556,11 +556,11 @@ public class Hello extends Performer {
       }
     }
   }
-  
+
   void makeWall(int effectType) {
     shapes.add(new Wall(effectType));
   }
-  
+
   void makeWall(int effectType, int direction) {
     shapes.add(new Wall(effectType, direction));
   }

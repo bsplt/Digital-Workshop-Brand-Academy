@@ -83,7 +83,7 @@ abstract class Performer {
         consolidateTables();
         saveTable(keyStrokes, "recording/" + tableName);
         rewind();
-        } else if (keyCode == 51) { // 3-Taste, speichern
+      } else if (keyCode == 51) { // 3-Taste, speichern
         keyStrokes = new Table();
         keyStrokesRecording = new Table();
         saveTable(keyStrokes, "recording/" + tableName);
