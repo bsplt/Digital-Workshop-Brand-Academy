@@ -4,7 +4,7 @@ Performer performer;
 PWindow photoDisplay;
 
 void settings() {
-  fullScreen(P3D, 2);
+  //fullScreen(P3D, 2);
   size(1920, 1080, P3D);
 }
 
@@ -29,18 +29,14 @@ void init(char key) {
 
   switch (key) {
   case '1':
-    performer = new Hello1();
-    performer.tableName = "test1.csv";
-    photoDisplay.loadPhoto(sketchPath() + "/photos/1.png");
+    performer = new P01();
+    performer.tableName = "P01.csv";
+    photoDisplay.loadPhoto(sketchPath() + "/photos/P01.png");
     break;
   case '2':
-    performer = new Hello2();
-    performer.tableName = "test2.csv";
-    photoDisplay.loadPhoto(sketchPath() + "/photos/2.png");
-    break;
-  case '3':
-    break;
-  case '4':
+    performer = new P02();
+    performer.tableName = "P02.csv";
+    photoDisplay.loadPhoto(sketchPath() + "/photos/P02.png");
     break;
   }
 
@@ -52,14 +48,22 @@ abstract class Performer {
   protected AudioPlayer sample;
   protected float audioSum;
   protected PShape frame;
-  protected long startTime; 
+  protected long startTime;
   protected PVector position, movement, rotation;
   protected ArrayList<Shape> shapes;
   protected PFont font, layoutFont;
   protected float deltaTime, lastTime;
   protected Table keyStrokes, keyStrokesRecording;
   protected int replayIndex;
-  public String tableName = "recording.csv";
+  protected String tableName = "recording.csv";
+
+  int SPACE = 32;
+  int W = 87;
+  int A = 65;
+  int S = 83;
+  int D = 68;
+  int F = 70;
+  int G = 71;
 
   protected void draw() {
   }
@@ -70,22 +74,27 @@ abstract class Performer {
 
   public void keyEvent(KeyEvent event) {
     if (event.getAction() == KeyEvent.PRESS) {
-      if (key == 'q') {
+      if (keyCode == 49) { // 1-Taste
         rewind();
-      } else if (key == 's') {
+      } else if (keyCode == 50) { // 2-Taste, speichern
         consolidateTables();
+        saveTable(keyStrokes, "recording/" + tableName);
+        rewind();
+      } else if (keyCode == 51) { // 3-Taste, speichern
+        keyStrokes = new Table();
+        keyStrokesRecording = new Table();
         saveTable(keyStrokes, "recording/" + tableName);
         rewind();
       } else {
         TableRow newStroke = keyStrokesRecording.addRow();
         newStroke.setString(0, nf(int(getTime()), 6));
-        newStroke.setString(1, str(key));
-        keyEvent(key);
+        newStroke.setString(1, str(keyCode));
+        keyEvent(keyCode);
       }
     }
   }
 
-  protected void keyEvent(char key) {
+  protected void keyEvent(int key) {
   }
 
   long getTime() {
@@ -127,7 +136,7 @@ abstract class Performer {
     for (int i = replayIndex; i < keyStrokes.getRowCount(); i++) {
       TableRow currentStroke = keyStrokes.getRow(i);
       if (currentStroke.getLong(0) < getTime()) {
-        keyEvent(currentStroke.getString(1).charAt(0));
+        keyEvent(int(currentStroke.getString(1)));
         replayIndex = i+1;
       } else {
         break;
