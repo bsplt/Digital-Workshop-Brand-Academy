@@ -134,7 +134,7 @@ Das ganze läuft dann so ein bisschen ab, wie _Guitar Hero_. Nur, dass niemand e
 Natürlich haben wir euch eine Funktionalität eingebaut, die euch hilft, das Programm zu steuern. Die könnt ihr über folgende Ziffern auf eurer _echten_ Tastatur steuern:
 * __Taste 1__: Zurückspulen. Dabei gehen eure Aufnahmen nicht verloren und ihr könnt zu eurer alten Aufnahme noch mehr hinzufügen und die Performance so Schritt für Schritt aufbauen.
 * __Taste 2__: Speichern. Damit landet alles, was ihr performt habt in einer Datei. Wenn ihr nicht speichert, ist euer Fortschritt verloren, sobald ihr Processing schließt. Außerdem spult die Taste auch automaitsch zurück. Gespeicherte Performances werden automatisch geladen.
-* __Taste 3__: Löschen. Seid ihr mit eurem Ergebnis unzufrieden, könnt ihr damit alles löschen – inklusive eurer Speicherdatei.
+* __Taste 9__: Löschen. Seid ihr mit eurem Ergebnis unzufrieden, könnt ihr damit alles löschen – inklusive eurer Speicherdatei. Löschen heißt aber auch: Es ist wirklich alles weg.
 
 ### Schritt 6: Dokumentieren
 
