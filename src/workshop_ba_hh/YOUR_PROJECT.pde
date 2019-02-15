@@ -1,8 +1,8 @@
 public class Hello extends Performer {
 
   /*
-   * Willkommen in eurem Projekt!
-   * Dieser Code unten ist eure kreative Sandbox für die nächsten Stunden.
+   * Willkommen in deinem Projekt!
+   * Dieser Code unten ist eure kreatives Spielfeld für die nächsten Stunden.
    * Kaputt geht nichts, bei Fehlern meckert Processing von alleine
    * und sollte irgendwas gar nicht mehr gehen, basteln wir das schon wieder hin.
    *
@@ -17,12 +17,12 @@ public class Hello extends Performer {
    * Das macht ihr mit drei Tasten auf eurer Tastatur:
    * Taste '1': Zurückspulen
    * Taste '2': Speichert eure Performance
-   * Taste '3': Löschen des Speicherstands
+   * Taste '9': Löschen des Speicherstands
    *
    * Viel Erfolg!
    */
 
-  String NAME = "Dein Name";
+  String NAME = "Du"; // Hier bitte deinen Vor- und Nachnamen eintragen
   String TITLE = "Titel";
   String ARTIST = "Künstler";
   String TRACK_FILE = "music.mp3";

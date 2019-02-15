@@ -10,13 +10,13 @@
  *          |___/
  *
  * von Alexander Lehmann & Thorge Wandrei
- * an der Brand Academy - Hamburg 24.-25.2.2018
+ * an der Brand Academy Hamburg
  *
  * -------
  *
  * Bitte in diesem Tab nichts am Code verändern, sonst läuft er später nicht mehr.
  * Dafür dürft ihr im nächsten Tab, YOUR_PROJECT, so viel experimentieren, wie ihr wollt.
- * Kaputt machen könnt ihr eh nichts, ist ja digital. ;)
+ * Kaputt machen könnt ihr eh nichts, ist ja digital.
  * Sprecht uns bei Fragen, oder wenn ihr Hilfe braucht, gerne sofort an.
  * Happy hacking!
  */
@@ -37,7 +37,7 @@ void setup() {
   hello.setupEvents(this);
   hello.initialize();
   hello.rewind();
-  config = createFont(sketchPath() + "/config/config.ttf", min(height, width) * 0.2);
+  config = createFont(sketchPath() + "/config/config.ttf", min(height, width) * 0.1);
 }
 
 void draw() {
@@ -83,7 +83,7 @@ abstract class Performer {
         consolidateTables();
         saveTable(keyStrokes, "recording/" + tableName);
         rewind();
-      } else if (keyCode == 51) { // 3-Taste, speichern
+      } else if (keyCode == 57) { // 3-Taste, löschen
         keyStrokes = new Table();
         keyStrokesRecording = new Table();
         saveTable(keyStrokes, "recording/" + tableName);
@@ -300,7 +300,7 @@ void keyPressed() {
   if (key == '2') {
     screens.add(new OSD("SAVED"));
   }
-  if (key == '3') {
+  if (key == '9') {
     screens.add(new OSD("ERASED"));
   }
 }

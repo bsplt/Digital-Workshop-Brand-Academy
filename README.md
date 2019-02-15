@@ -7,9 +7,9 @@
 
 Moin zusammen!
 
-Schön, dass ihr hier seid. Heute haben wir mit euch etwas abgefahrenes vor. Ihr programmiert eurer eigenes Musikvideo mit Bananen, Tesafilm und jeder Menge Kabeln.
+Heute haben wir mit euch etwas Ungewöhnliches vor.  Wir programmieren ein Musikvideo mit Bananen, Tesafilm und jeder Menge Kabeln.
 
-Weil ihr hier im Workshop _Digitale Medien_ von _Alexander Lehmann_ und _Thorge Wandrei_ seid, kommt da jede Menge Technik auf euch zu, in der ihr euch kreativ zurechtfinden müsst. Das heißt nicht, dass ihr Programmieren können müsst, geschweige denn irgendwas zu verstehen. Das tun wir nicht mal immer. Viel wichtiger ist es, dass ihr euch nicht von der Technik einschüchtern lasst und stattdessen die Chance nutzt, dieses Medium ästhetisch zu erkunden. Der Code ist überwältigend, aber Schritt für Schritt könnt ihr Kleinigkeiten ändern, bis plötzlich alles passt und ihr zufrieden seid.
+Weil ihr hier im Workshop _Digitale Medien_ von _Alexander Lehmann_ und _Thorge Wandrei_ seid, kommt da jede Menge Technik auf euch zu, in der ihr euch kreativ zurechtfinden sollt. Das heißt nicht, dass ihr Programmieren können müsst, geschweige denn irgendwas ins Detail zu verstehen. Das tun nicht mal wir. Viel wichtiger ist es, dass ihr euch nicht von der Technik einschüchtern lasst und stattdessen die Chance nutzt, dieses Medium ästhetisch zu erkunden. Der Code ist überwältigend, aber Schritt für Schritt könnt ihr Kleinigkeiten ändern, bis plötzlich alles passt und ihr etwas Einzigartiges geschaffen habt.
 
 Ihr könnt euch schon mal darauf vorbereiten, dass ihr Musik braucht. Und zwar die Musik, die _ihr_ gutfindet. Denn später baut ihr mit einem [Makey Makey](https://makeymakey.com/) eurer eigenes Interface, mit dem ihr dann visuelle Effekte, passend zum Song, erzeugt.
 
@@ -33,7 +33,7 @@ Jetzt habt ihr den Programmcode vor euch. Los geht es ganz einfach: Auf das Play
 
 Es ist an der Zeit den Makey Makey anzuschließen. Der Makey Makes ist _eigentlich_ eine Tastatur, die keine Tasten hat. Dafür könnt ihr anderen Gegenstände, die elektrisch leitend sind, als Tasten benutzen. Zum Beispiel Obst oder Alu-Folie. Das Gute: Wenn ihr noch mal zuhause rumtüfteln wollt, braucht ihr den Makey Makey gar nicht, denn es funktioniert auch einfach so mit eurer Tastatur. Also ab mit dem Makey Makey in den USB-Port. Die Funktion ist ganz einfach. Es gibt folgende Tasten am Makey Makey, die wir auch benutzen: `LEFT`, `RIGHT`, `UP`, `DOWN`, `SPACE`, `W`, `A`, `S`, `D`, `F` und `G`. Wenn ihr die leitenden Flächen dieser Tasten über Kabel oder Krokodilklemmen mit der großen Fläche elektrisch verbindet, die `EARTH` heißt, drückt ihr quasi die Taste.
 
-__Euer Ziel ist es___, den Processing-Sketch soweit zu verändern, dass er zu eurer Musikauswahl passt und gut aussieht und dann ein Interface mit dem Makey Makey zu bauen, über das ihr selbst ein Musikvideo steuert. Das nehmen wir dann auf, um es den anderen zu zeigen.
+__Euer Ziel ist es__, den Processing-Sketch soweit zu verändern, dass er zu eurer Musikauswahl ästhetisch passt, bewusst damit bricht, wie auch immer, vor allem aber interessant ist. Mit dem baut ihr einen Controller, über den ihr selbst das Musikvideo steuert. Das nehmen wir dann auf, um es den anderen zu zeigen.
 
 Das heißt: Ihr müsst euch Gedanken um Musik machen und sie einbauen, nach Schriften suchen und downloaden, über Farben nachdenken, jede Menge Variablen verändern, vielleicht ein klitzekleines bisschen Programmieren und zum Schluss dann mit eurem selbstgebauten Werkzeug eine Performance aufzunehmen.
 
@@ -87,7 +87,7 @@ Bei den Schriften ist es genau der gleiche Vorgang. Wohlgemerkt, bei Schriften g
 
  ## Schritt 4: Hacken
 
-Vielleicht merkt ihr es gleich, aber im Code passiert folgendes. Jedes mal, wenn ihr an eurem Makey Makey (oder an eurer Tastatur) eine Taste drückt, wird die Funktion `keyEvent` aufgerufen. Eine Funktion ist ein bestimmter Abschnitt an Code, der durch geschweifte Klammern gekennzeichnet ist, `{ ... }`, und unter _bestimmten_ Umständen aufgerufen wird. Im unseren Fall, wenn eine Taste gedrückt wird. Den Rest in der Funktion kann man fast wie Englisch lesen. Beispielsweise:
+Vielleicht merkt ihr es gleich, aber im Code passiert folgendes. Jedes mal, wenn ihr an eurem Makey Makey (oder an eurer Tastatur) eine Taste drückt, wird die Funktion `keyEvent` aufgerufen. Eine Funktion ist ein bestimmter Abschnitt an Code, der durch geschweifte Klammern gekennzeichnet ist, `{ ... }`, und unter ganz bestimmten Umständen aufgerufen wird. Im unseren Fall, wenn eine Taste gedrückt wird. Den Rest in der Funktion kann man fast wie Englisch lesen. Beispielsweise:
 ```
 if (key == W) {
   makeShutter(0);
@@ -146,7 +146,7 @@ Das wichtigste ist: Wenn der Workshop vorbei ist, solltet ihr uns einen Code hin
 
 * Auf [Fontsquriell](https://www.fontsquirrel.com/) findet ihr eine hervorragende, große Auswahl an freien Schriften
 * Die Schriftschmiede [League of movable type](https://www.theleagueofmoveabletype.com/) bietet eine kleine, aber exzellente Auswahl an open-source Schriften
-* [Google Fonts](https://fonts.google.com/) schafft einen guten Überblick über hochwertige, freie Schriftarten, bietet aber keinen direkten Download an. Den muss man sich dann selbst googlen.
+* [Google Fonts](https://fonts.google.com/) schafft einen guten Überblick über hochwertige, freie Schriftarten, bietet aber nicht immer einen direkten Download an. Den muss man sich dann manchmal selbst googlen.
 * Soll es ein bisschen verrückter sein, oder gar kitschig, psychedelisch oder esoterisch? Auf [Dafont](https://www.dafont.com/de/) werdet ihr garantiert fündig!
 
 ### Farben:
@@ -158,7 +158,7 @@ Das wichtigste ist: Wenn der Workshop vorbei ist, solltet ihr uns einen Code hin
 
 ### Musik:
 * Tja, wo ihr eure Lieblingsmusik als mp3 herbekommt, ist eine offene Frage. Vielleicht habt ihr sie dabei?
-* Wenn nicht, dann helfen Dienste, wie [convert2mp3](http://convert2mp3.net/), die euch Musikdateien aus YouTube-Links erstellen. Diese Dienste sind alle etwas zwielichtig und mit Werbung bespickt, also vorsichtig sein.
+* Wenn nicht, dann helfen Dienste, wie [convert2mp3](http://convert2mp3.net/), die euch Musikdateien aus YouTube-Links erstellen. Diese Dienste sind alle etwas zwielichtig und mit Werbung bespickt, also vorsichtig sein, wo ihr hinklickt.
 
 ## Sonstiges
 
