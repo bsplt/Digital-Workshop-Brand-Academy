@@ -144,7 +144,7 @@ Das wichtigste ist: Wenn der Workshop vorbei ist, solltet ihr uns einen Code hin
 
 ### Schriften:
 
-* Auf [Fontsquriell](https://www.fontsquirrel.com/) findet ihr eine hervorragende, große Auswahl an freien Schriften
+* Auf [Fontsquriell](https://www.fontsquirrel.com/fonts/list/find_fonts?filter%5Bdownload%5D=local&sort=popular) findet ihr eine hervorragende, große Auswahl an freien Schriften
 * Die Schriftschmiede [League of movable type](https://www.theleagueofmoveabletype.com/) bietet eine kleine, aber exzellente Auswahl an open-source Schriften
 * [Google Fonts](https://fonts.google.com/) schafft einen guten Überblick über hochwertige, freie Schriftarten, bietet aber nicht immer einen direkten Download an. Den muss man sich dann manchmal selbst googlen.
 * Soll es ein bisschen verrückter sein, oder gar kitschig, psychedelisch oder esoterisch? Auf [Dafont](https://www.dafont.com/de/) werdet ihr garantiert fündig!
@@ -158,7 +158,7 @@ Das wichtigste ist: Wenn der Workshop vorbei ist, solltet ihr uns einen Code hin
 
 ### Musik:
 * Tja, wo ihr eure Lieblingsmusik als mp3 herbekommt, ist eine offene Frage. Vielleicht habt ihr sie dabei?
-* Wenn nicht, dann helfen Dienste, wie [convert2mp3](http://convert2mp3.net/), die euch Musikdateien aus YouTube-Links erstellen. Diese Dienste sind alle etwas zwielichtig und mit Werbung bespickt, also vorsichtig sein, wo ihr hinklickt.
+* Wenn nicht, dann helfen Dienste, wie [Flvto](https://www.flvto.biz/de/) oder [convert2mp3](http://convert2mp3.net/), die euch Musikdateien aus YouTube-Links erstellen. Diese Dienste sind alle etwas zwielichtig und mit Werbung bespickt, also vorsichtig sein, wo ihr hinklickt. Ladet nichts anderes runter, als euer mp3. Der Rest kann gefährlich sein!
 
 ## Sonstiges
 
