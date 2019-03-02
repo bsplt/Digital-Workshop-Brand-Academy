@@ -3,6 +3,12 @@
 
 ![Banana Piano](https://bonnietdnguyen.files.wordpress.com/2015/07/bananas-comp1.jpg)
 
+## Download
+
+**Hier bekommt ihr die Workshop-Vorlage zum Herunterladen: [workshop_ba_hh.zip](download/workshop_ba_hh.zip).**
+
+Die zip-Datei könnt ihr *entzippen*. Dann habt ihr eine Ordnerstruktur, die ihr bitte nicht verändern solltet. Ihr könnt einfach den ganzen Ordner kopieren, zum Beispiel auf den Schreibtisch.
+
 ## Einleitung
 
 Moin zusammen!
@@ -25,7 +31,7 @@ Als aller erstes braucht ihr [Processing 3](https://processing.org/download/). P
 
 Außerdem braucht ihr die Erweiterung _minim_, die es Processing ermöglicht, Sound zu machen. Dafür geht ihr in Processing auf `Sketch`, dann `Library importieren` und schließlich `Library hinzufügen ...`. Ein neues Fenster öffnet sich, tippt `minim` in den Filter und klickt auf `Install`. Das wars.
 
-Natürlich braucht ihr jetzt noch _unsere_ Software. Das ist ein Sketch in Processing, den wir schon mal für euch geschrieben haben. _Sketch_, das steht in Processing für den Code eines Programms. Den Sketch könnt ihr [hier](download/workshop_ba_hh.zip) direkt als zip-Datei downloaden und dann einfach mit Processing öffnen.
+Natürlich braucht ihr jetzt noch _unsere_ Software. Das ist ein Sketch in Processing, den wir schon mal für euch geschrieben haben. _Sketch_, das steht in Processing für den Code eines Programms. Den Sketch könnt ihr [von dieser Website](download/workshop_ba_hh.zip) direkt als zip-Datei downloaden und dann einfach mit Processing öffnen.
 
 ### Schritt 2: Was machen?
 
