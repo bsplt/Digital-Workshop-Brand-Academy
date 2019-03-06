@@ -15,7 +15,7 @@ Moin zusammen!
 
 Heute haben wir mit euch etwas Ungewöhnliches vor.  Wir programmieren ein Musikvideo mit Bananen, Tesafilm und jeder Menge Kabeln.
 
-Weil ihr hier im Workshop _Digitale Medien_ von _Alexander Lehmann_ und _Thorge Wandrei_ seid, kommt da jede Menge Technik auf euch zu, in der ihr euch kreativ zurechtfinden sollt. Das heißt nicht, dass ihr Programmieren können müsst, geschweige denn irgendwas ins Detail zu verstehen. Das tun nicht mal wir. Viel wichtiger ist es, dass ihr euch nicht von der Technik einschüchtern lasst und stattdessen die Chance nutzt, dieses Medium ästhetisch zu erkunden. Der Code ist überwältigend, aber Schritt für Schritt könnt ihr Kleinigkeiten ändern, bis plötzlich alles passt und ihr etwas Einzigartiges geschaffen habt.
+Weil ihr hier im Workshop _Digitale Medien_ von _[Alexander Lehmann](https://github.com/bsplt)_ und _[Thorge Wandrei](https://github.com/thetw)_ seid, kommt da jede Menge Technik auf euch zu, in der ihr euch kreativ zurechtfinden sollt. Das heißt nicht, dass ihr Programmieren können müsst, geschweige denn irgendwas ins Detail zu verstehen. Das tun nicht mal wir. Viel wichtiger ist es, dass ihr euch nicht von der Technik einschüchtern lasst und stattdessen die Chance nutzt, dieses Medium ästhetisch zu erkunden. Der Code ist überwältigend, aber Schritt für Schritt könnt ihr Kleinigkeiten ändern, bis plötzlich alles passt und ihr etwas Einzigartiges geschaffen habt.
 
 Ihr könnt euch schon mal darauf vorbereiten, dass ihr Musik braucht. Und zwar die Musik, die _ihr_ gutfindet. Denn später baut ihr mit einem [Makey Makey](https://makeymakey.com/) eurer eigenes Interface, mit dem ihr dann visuelle Effekte, passend zum Song, erzeugt.
 
@@ -48,12 +48,12 @@ Das heißt: Ihr müsst euch Gedanken um Musik machen und sie einbauen, nach Schr
 Im Processing-Editor findet ihr zwei Tabs. Der vermutlich offene heißt `workshop_ba_hh`. Den lasst ihr bitte so, wie ihr ist. Stattdessen wechselt ihr rüber in den Tab, der `YOUR_PROJECT` heißt. Da findet ihr jetzt erstmal jede Menge Code.
 
 Das erste, was ihr machen könnt: Spielt mit den Werten, die ihr oben in der Datei seht, die großgeschriebenen, wie bspw. die Zeile:
-```
+```Java
 float FRAME_MARGIN = 0.075;
 float COLOR_CHANGE_SPEED = 3.0;
 ```
 Was passiert, wenn ihr sie so ändert?
-```
+```Java
 float FRAME_MARGIN = 0.2;
 float COLOR_CHANGE_SPEED = 1.0;
 ```
@@ -70,7 +70,7 @@ Grundsätzlich ist beim Programmieren zu beachten, dass es verschiedene Datentyp
 Wenn man einen Wert mit einem Datentyp speichert, heißt das _Variable_. Wenn wir eine Variable definieren, dann schreiben wir den Datentypen dazu, damit Processing _explizit_ weiß, was wir verwenden wollen.
 
 Dementsprechend passiert im nächsten Abschnitt folgendes: Wir erstellen eine Variable, die `BLOB_FILL` heißt und eine Farbe sein soll. Durch das `=` weisen wir der Variable die Farbe zu, die in diesem Fall `#333333`, also dunkelgrau, ist. Ganz wichtig: Eine Zeile ist in Processing beendet, wir ihr ein `;` benutzt – und das braucht Processing, um sich zurecht zu finden.
-```
+```Java
 color BLOB_FILL = #333333;
 ```
 
@@ -79,11 +79,11 @@ Die ganzen Farben, Texte und Zahlen könnt und sollt ihr austauschen oder zumind
 Außerdem solltet ihr dort auch euren Namen usw. eintragen.
 
 Nicht vergessen dürfen wir, dass ihr auch eure eigene Musik und Schriften in Processing benutzen sollt. Diese Dateien legt ihr in den `data`-Ordner. Den findet ihr in eurem Projekt-Ordner oder indem ihr in Processing einfach `CMD + k` auf Mac OS oder `STRG + k` auf Windows drückt. Habt ihr beispielsweise eine Musikdatei, die `hello_world.mp3` heißt, kopiert ihr sie einfach in den `data`-Ordner und ändert dann diese Zeile:
-```
+```Java
 String TRACK_FILE = "music.mp3";
 ```
 so, dass da euer Dateiname steht:
-```
+```Java
 String TRACK_FILE = "hello_world.mp3";
 ```
 
@@ -94,7 +94,7 @@ Bei den Schriften ist es genau der gleiche Vorgang. Wohlgemerkt, bei Schriften g
  ## Schritt 4: Hacken
 
 Vielleicht merkt ihr es gleich, aber im Code passiert folgendes. Jedes mal, wenn ihr an eurem Makey Makey (oder an eurer Tastatur) eine Taste drückt, wird die Funktion `keyEvent` aufgerufen. Eine Funktion ist ein bestimmter Abschnitt an Code, der durch geschweifte Klammern gekennzeichnet ist, `{ ... }`, und unter ganz bestimmten Umständen aufgerufen wird. Im unseren Fall, wenn eine Taste gedrückt wird. Den Rest in der Funktion kann man fast wie Englisch lesen. Beispielsweise:
-```
+```Java
 if (key == W) {
   makeShutter(0);
 }
@@ -109,11 +109,11 @@ Wir haben folgende Effekte im Angebot:
 * __Wall__: Dann gibt es noch diesen perspektivischen Effekt mit fünf Typen und einem optionalen Parameter für Richtung, in der er erscheinen soll. Also zum Beispiel `makeWall(0)` für eine zufällige Platzierung und Effekt-Typ _0_ oder `makeWall(1,2)` für den Effekt-Typ _0_ und eine Platzierung _unten_.
 
 Diese ganzen _make_-Befehle könnt ihr also einfach an eine Taste ranhängen. Wenn ihr zum Beispiel oben im Code das schreibt:
-```
+```Java
 float WALL_DURATION = 3.5;
 ```
 und dann in der `keyEvent`-Funktion das:
-```
+```Java
 if (key == SPACE) {
   makeWall(0);
 }
@@ -121,7 +121,7 @@ if (key == SPACE) {
 dann würdet ihr beim Drücken der Leertaste, am Makey Makey oder an der Tastatur, einen perspektivischen Effekt erstellen, mit dem Effekt-Typen _0_ und zufälliger Ausrichtung, der nach 3,5 Sekunden wieder verschwunden ist.
 
 Natürlich lässt sich das noch weiter ausreizen. Ihr könntet so etwas schreiben:
-```
+```Java
 if (key == SPACE) {
   makeWall(1, 1);
   makeWall(1, 3);
